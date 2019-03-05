@@ -1,6 +1,6 @@
 # gatsby-source-randomuser
 
-This source plugin makes randuser.me data available via GraphQL queries in Gatsby
+This source plugin makes [randuser.me](https://randomuser.me) data available via GraphQL queries in Gatsby
 
 ## Installation
 

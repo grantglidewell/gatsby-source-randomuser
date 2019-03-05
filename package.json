@@ -1,7 +1,7 @@
 {
   "name": "gatsby-source-randomuser",
-  "version": "1.0.0",
-  "description": "Gatsby source plugin for randomuser.me",
+  "version": "1.0.1",
+  "description": "Gatsby source plugin for randomuser.me data",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +14,10 @@
   ],
   "author": "Grant Glidewel <grant@thirdandgrove.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grantglidewell/gatsby-source-randomuser"
+  },
   "dependencies": {
     "node-fetch": "^2.3.0",
     "query-string": "^6.3.0"
