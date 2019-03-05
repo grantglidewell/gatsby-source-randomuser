@@ -2,7 +2,7 @@
 
 This source plugin makes randuser.me data available via GraphQL queries in Gatsby
 
-## installation
+## Installation
 
 ```
 # Install the plugin
