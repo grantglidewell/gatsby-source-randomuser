@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-randomuser",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Gatsby source plugin for randomuser.me data",
   "scripts": {
     "build": "babel src --out-dir ."
