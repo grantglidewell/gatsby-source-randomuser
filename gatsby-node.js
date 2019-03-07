@@ -14,19 +14,19 @@ exports.sourceNodes = ({
   } = actions;
 
   const processUser = user => {
-    const nodeId = createNodeId(`randomUser-${user.email}`);
-    const nodeContent = JSON.stringify(user);
-    const nodeData = Object.assign({}, user, {
-      id: nodeId,
+    // user postcodes come back as numbers and strings
+    // this causes issues with schema formation
+    user.location.postcode = user.location.postcode.toString();
+    return { ...user,
+      id: createNodeId(`randomUser-${user.email}`),
       parent: null,
       children: [],
       internal: {
         type: `randomUser`,
-        content: nodeContent,
+        content: JSON.stringify(user),
         contentDigest: createContentDigest(user)
       }
-    });
-    return nodeData;
+    };
   };
 
   configOptions.format = 'json';
